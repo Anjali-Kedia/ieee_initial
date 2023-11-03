@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,6 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        primary: {
+          white: '#FFFFFF',
+          turqoise: '#16C79E',
+          bgblack: '1A1A1A',
+          limegreen: '#C5DA45',
+        },
+        secondary:{
+          darkblue: '#031B2D',
+          blue: '#05D89D',
+          grey: '#222831',
+          black: '#171717',
+        }
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
